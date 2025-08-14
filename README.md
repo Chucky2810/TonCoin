@@ -50,3 +50,38 @@ The project is highly-opinionated, and there are many other alternate routes it 
 # License
 
 MIT
+# TON Telegram WebApp mit Mining-Boost
+
+## 1. Projekt einrichten
+- Repo Sajid-Rajput/ton-telegram-Webapp forken
+- Dateien wie oben ersetzen/einfügen
+
+## 2. Bot konfigurieren
+- Führe im Projektordner aus:
+  ```bash
+  node configure.js
+  ```
+- Dein Bot-Token wird automatisch in botconfig.json hinterlegt.
+
+## 3. App starten & deployen
+- Installiere Abhängigkeiten:
+  ```bash
+  yarn
+  ```
+- Entwickle lokal:
+  ```bash
+  npm run dev
+  ```
+- Deployment: Push auf main, GitHub Actions bauen die App
+
+## 4. Telegram Bot verbinden
+- Gehe nach README vor: /newbot bei BotFather, Username vergeben (bereits erledigt)
+- Bot-Token ist schon eingetragen
+
+## 5. Mining-Booster aktivieren
+- Die Komponente "Transfer TON" nimmt Einzahlungen auf deine Wallet entgegen.
+
+---
+
+**Deine Default Adresse für Einzahlungen:**  
+`UQB5yLfgNXs6kSSv7nSXYlGCyh4s3yPml6CEveZnvZYtHoBf`
