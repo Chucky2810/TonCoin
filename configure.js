@@ -1,13 +1,13 @@
-import axios from "axios";
-import { createInterface } from "readline";
-import fs from "fs";
-import { promisify } from "util";
+const fs = require('fs');
 
-const rl = createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
+const configFile = 'botconfig.json';
 
+const config = {
+  telegramToken: "8304656634:AAGyewWjTjOA3UXnBtqbyigXeGpqmhkp6jM"
+};
+
+fs.writeFileSync(configFile, JSON.stringify(config, null, 2));
+console.log("Bot token wurde automatisch eingetragen!");
 const question = (question) =>
   new Promise((resolve) => rl.question(question, resolve));
 
